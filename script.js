@@ -24,7 +24,7 @@ function findFirstSyllable(word) {
     count++
     if (vowels.indexOf(c) > -1) {
 
-      if (c == 'e' && lowercase.charAt(count+1) == i) {
+      if (c == 'e' && lowercase.charAt(count+1) == 'i') {
         count +=1
       }
 
