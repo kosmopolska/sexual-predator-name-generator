@@ -23,6 +23,11 @@ function findFirstSyllable(word) {
   for (const c of lowercase) {
     count++
     if (vowels.indexOf(c) > -1) {
+
+      if (c == 'e' && lowercase.charAt(count+1) == i) {
+        count +=1
+      }
+
       vowelIndex = count
       break
     }
