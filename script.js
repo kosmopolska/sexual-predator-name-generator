@@ -9,7 +9,7 @@ function generate() {
 
   const output = document.getElementById("output")
 
-  output.innerHTML = "Ditt sexuella övergreppsnamn är " + newFirst + " " + newLast
+  output.innerHTML = "Ditt personliga sexförbrytarknullgubbe-namn är " + newFirst + " " + newLast
 
 
 }
