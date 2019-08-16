@@ -3,14 +3,18 @@ function generate() {
   console.log(input)
   const firstName = input[0]
   const lastName = input[1]
-
-  const newFirst = (findFirstSyllable(firstName) + 'ey')
-  const newLast = (findFirstSyllable(lastName) + 'stein')
-
   const output = document.getElementById("output")
 
-  output.innerHTML = "Ditt personliga sexförbrytarknullgubbe-namn är " + newFirst + " " + newLast
+  if (firstName == "Petrina" && lastName == "Solange") {
+    output.innerHTML = "Ditt personliga sexförbrytarknullgubbe-namn är Petrina Solange"
+  } else {
 
+    const newFirst = (findFirstSyllable(firstName) + 'ey')
+    const newLast = (findFirstSyllable(lastName) + 'stein')
+
+    output.innerHTML = "Ditt personliga sexförbrytarknullgubbe-namn är " + newFirst + " " + newLast
+
+  }
 
 }
 
